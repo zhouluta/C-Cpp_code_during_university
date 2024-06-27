@@ -1,0 +1,4 @@
+﻿  10_2.cpp
+D:\WeChat\WeChat Files\wxid_7u7d36o51olp22\FileStorage\File\2020-11\10_2.cpp(8,19): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+D:\WeChat\WeChat Files\wxid_7u7d36o51olp22\FileStorage\File\2020-11\10_2.cpp(41): warning C4715: “Calculate”: 不是所有的控件路径都返回值
+  数据结构十（2）.vcxproj -> C:\Users\？？？\source\repos\数据结构十（2）\Debug\数据结构十（2）.exe

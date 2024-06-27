@@ -1,0 +1,8 @@
+﻿  10_1.cpp
+D:\WeChat\WeChat Files\wxid_7u7d36o51olp22\FileStorage\File\2020-11\10_1.cpp(4,7): warning C4101: “num1”: 未引用的局部变量
+D:\WeChat\WeChat Files\wxid_7u7d36o51olp22\FileStorage\File\2020-11\10_1.cpp(4,12): warning C4101: “num2”: 未引用的局部变量
+D:\WeChat\WeChat Files\wxid_7u7d36o51olp22\FileStorage\File\2020-11\10_1.cpp(80,10): warning C4473: “scanf_s”: 没有为格式字符串传递足够的参数
+D:\WeChat\WeChat Files\wxid_7u7d36o51olp22\FileStorage\File\2020-11\10_1.cpp(80,10): message : 占位符和其参数预计 2 可变参数，但提供的却是 1 参数
+D:\WeChat\WeChat Files\wxid_7u7d36o51olp22\FileStorage\File\2020-11\10_1.cpp(80,10): message : 缺失的可变参数 2 为格式字符串“%c”所需
+D:\WeChat\WeChat Files\wxid_7u7d36o51olp22\FileStorage\File\2020-11\10_1.cpp(80,10): message : 此参数用作缓冲区大小
+  数据结构实验十.vcxproj -> C:\Users\？？？\source\repos\数据结构实验十\Debug\数据结构实验十.exe

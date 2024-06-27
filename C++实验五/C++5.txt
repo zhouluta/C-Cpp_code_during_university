@@ -1,0 +1,187 @@
+#include<iostream>
+using namespace std;
+/*
+1、编写一个函数，输入一个字符串（字符数组形式），拷贝该字符串并返回。
+要求：使用指针实现。
+*/
+char *copy(char* p,char a[])//函数前加*
+{
+p = a;//地址相同
+return p;//返回p
+}
+int main()
+{
+char a[5];
+cout << "输入5个字符组成的字符串：";
+for (int i = 0; i < 5; i++)
+{
+cin >> a[i];
+}
+cout << "字符串a[5]:";
+for (int i = 0; i < 5; i++)
+{
+cout<< a[i]<<" ";
+}
+char* p=NULL;
+p=copy(p, a);
+cout << "\n通过指针拷贝后输出：";
+for (int i = 0; i < 5; i++)
+{
+cout << p[i] << " ";
+}
+system("pause");
+return 0;
+}
+
+
+
+#include<iostream>
+using namespace std;
+/*
+
+2、编写一个函数，输入两个3x3的二维数组（当做矩阵），求出矩阵相乘的结果并返回.
+要求：使用指针实现。
+
+*/
+
+int **mutiple(int a[3][3], int b[3][3])
+{
+int** p= new int* [3];//使用new创建
+for (int i = 0; i < 3; i++)
+{
+p[i] = new int[3];
+}
+for (int i = 0; i < 3; i++)
+{
+for (int j = 0; j < 3; j++)
+{
+p[i][j] = 0;
+}
+}
+for (int i = 0; i < 3; i++)
+{
+for (int j = 0; j < 3; j++)
+{
+for (int k = 0; k < 3; k++)
+{
+p[i][j] += a[i][k] * b[k][j];//矩阵相乘算法
+}
+}
+}
+return p;
+}
+int main()
+{
+int a[3][3] = { 0 }, b[3][3] = { 0 }, c[3][3] = { 0 };
+int i = 0, j = 0;
+int** p = NULL;
+cout << "Please input a two-dimension array a[3][3]:" << endl;
+for (i = 0; i < 3; i++)
+{
+for (j = 0; j < 3; j++)
+{
+cin >> a[i][j];
+}
+}
+cout << endl;
+cout << "Please input a two-dimension array b[3][3]:" << endl;
+for (i = 0; i < 3; i++)
+{
+for (j = 0; j < 3; j++)
+{
+cin >> b[i][j];
+}
+}
+cout << endl;
+cout << "Print the two-dimension array a[3][3]:" << endl;
+for (i = 0; i < 3; i++)
+{
+for (j = 0; j < 3; j++)
+{
+cout << a[i][j] << " ";
+
+}
+cout << endl;
+}
+cout << endl;
+cout << "Print the two-dimension array b[3][3]:" << endl;
+for (i = 0; i < 3; i++)
+{
+for (j = 0; j < 3; j++)
+{
+cout << b[i][j] << " ";
+}
+cout << endl;//每输出3个元素后换行以优化显示
+}
+cout << "After mutiple:print the p[3][3]:" << endl;
+p=mutiple(a, b);
+for (i = 0; i < 3; i++)
+{
+for (j = 0; j < 3; j++)
+{
+cout << p[i][j] << " ";
+}
+cout << endl;
+}
+cout << endl;
+system("pause");
+return 0;
+}
+
+
+
+#include<iostream>
+#include<string.h>
+using namespace std;
+//参考网址：https://blog.csdn.net/qq_28351609/article/details/84633393
+/*
+
+3、假设有n个字符串（字符数组形式），按字典顺序排序好按顺序输出字符串。
+要求：使用指针实现。
+例如：输入s1=”abc”，s2=”aacd”，s3=”aac”，s4=”bcd”，s5=”bcdef”
+输出aac，aacd，abc，bcd，bcdef
+
+*/
+
+void sort(char* a[])
+{
+int i, j;
+char* temp;
+for (i = 0; i < 4; i++)//注意是i<4,总共有五个字符串而后面要+1
+{
+for (j = 0; j < 4; j++)//注意是j<4,总共有五个字符串而下面要+1和后面的那个字符串比较
+{
+if (strcmp(a[j], a[j + 1]) > 0)//字符串比较:>0表示前面的字符串比后面的大则交换
+{//两个字符串自左向右逐个字符相比（按 ASCII 值大小相比较），直到出现不同的字符或遇 \0 为止
+temp = a[j];
+a[j] = a[j + 1];
+a[j + 1] = temp;
+}
+}
+}
+}
+void print(char* a[])
+{
+for (int i = 0; i < 5; i++)
+{
+cout << a[i] << " ";
+}
+}
+int main()
+{
+char* a[5];//字符指针数组
+char a1[] = "abc",a2[]="aacd",a3[]="aac",a4[]="bcd",a5[]="bcdef";
+a[0] = a1;
+a[1] = a2;
+a[2] = a3;
+a[3] = a4;
+a[4] = a5;
+cout << "Before sort:";
+print(a);
+sort(a);
+cout << "\nAfter sort:";
+print(a);
+cout << endl;
+system("pause");
+return 0;
+}

@@ -1,0 +1,4 @@
+﻿  源.cpp
+C:\Users\？？？\source\repos\exercise\源.cpp(609,13): warning C4326: “main”的返回类型应为“int”而非“void”
+C:\Users\？？？\source\repos\exercise\源.cpp(607): warning C4172: 返回局部变量或临时变量的地址: x
+  exercise.vcxproj -> C:\Users\？？？\source\repos\exercise\Debug\exercise.exe

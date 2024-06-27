@@ -1,0 +1,4 @@
+﻿E:\vs1\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(DataStructure_C++.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  lengthOfLastWord.cpp
+C:\Users\？？？\source\repos\DataStructure_C++\lengthOfLastWord.cpp(34,12): warning C4326: “main”的返回类型应为“int”而非“void”
+  DataStructure_C++.vcxproj -> C:\Users\？？？\source\repos\DataStructure_C++\Debug\leetCodeExe.exe

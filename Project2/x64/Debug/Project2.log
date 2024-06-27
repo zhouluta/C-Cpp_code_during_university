@@ -1,0 +1,23 @@
+﻿  源1.cpp
+C:\Users\？？？\source\repos\Project2\源1.cpp(66,17): warning C4477: “scanf”: 格式字符串“%c”需要类型“char *”的参数，但可变参数 3 拥有了类型“int”
+C:\Users\？？？\source\repos\Project2\源1.cpp(44,9): warning C4101: “i”: 未引用的局部变量
+C:\Users\？？？\source\repos\Project2\源1.cpp(44,12): warning C4101: “size”: 未引用的局部变量
+C:\Users\？？？\source\repos\Project2\源1.cpp(289,12): warning C4473: “scanf_s”: 没有为格式字符串传递足够的参数
+C:\Users\？？？\source\repos\Project2\源1.cpp(289,12): message : 占位符和其参数预计 2 可变参数，但提供的却是 1 参数
+C:\Users\？？？\source\repos\Project2\源1.cpp(289,12): message : 缺失的可变参数 2 为格式字符串“%c”所需
+C:\Users\？？？\source\repos\Project2\源1.cpp(289,12): message : 此参数用作缓冲区大小
+C:\Users\？？？\source\repos\Project2\源1.cpp(493,31): warning C4474: printf: 格式字符串中传递的参数太多
+C:\Users\？？？\source\repos\Project2\源1.cpp(493,31): message : 占位符和其参数预计 0 可变参数，但提供的却是 1 参数
+C:\Users\？？？\source\repos\Project2\源1.cpp(514,31): warning C4474: printf: 格式字符串中传递的参数太多
+C:\Users\？？？\source\repos\Project2\源1.cpp(514,31): message : 占位符和其参数预计 0 可变参数，但提供的却是 1 参数
+C:\Users\？？？\source\repos\Project2\源1.cpp(533,31): warning C4474: printf: 格式字符串中传递的参数太多
+C:\Users\？？？\source\repos\Project2\源1.cpp(533,31): message : 占位符和其参数预计 0 可变参数，但提供的却是 1 参数
+C:\Users\？？？\source\repos\Project2\源1.cpp(565,16): warning C4244: “=”: 从“clock_t”转换到“float”，可能丢失数据
+C:\Users\？？？\source\repos\Project2\源1.cpp(567,17): warning C4244: “=”: 从“clock_t”转换到“float”，可能丢失数据
+C:\Users\？？？\source\repos\Project2\源1.cpp(574,16): warning C4244: “=”: 从“clock_t”转换到“float”，可能丢失数据
+C:\Users\？？？\source\repos\Project2\源1.cpp(576,17): warning C4244: “=”: 从“clock_t”转换到“float”，可能丢失数据
+C:\Users\？？？\source\repos\Project2\源1.cpp(583,16): warning C4244: “=”: 从“clock_t”转换到“float”，可能丢失数据
+C:\Users\？？？\source\repos\Project2\源1.cpp(585,17): warning C4244: “=”: 从“clock_t”转换到“float”，可能丢失数据
+C:\Users\？？？\source\repos\Project2\源1.cpp(592,16): warning C4244: “=”: 从“clock_t”转换到“float”，可能丢失数据
+C:\Users\？？？\source\repos\Project2\源1.cpp(594,17): warning C4244: “=”: 从“clock_t”转换到“float”，可能丢失数据
+  Project2.vcxproj -> C:\Users\？？？\source\repos\Project2\x64\Debug\Project2.exe
